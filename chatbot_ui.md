@@ -103,7 +103,7 @@ def moisture_sensor_info(mode='real-time', file_path=None, port='/dev/ttyUSB0', 
 ---
 
 ### **Light Sensor Function**
-
+```python
 def light_sensor_info(mode='real-time', file_path=None, port='/dev/ttyUSB0', baudrate=9600):
     """
     Function to process and return light sensor data.
@@ -149,12 +149,13 @@ def light_sensor_info(mode='real-time', file_path=None, port='/dev/ttyUSB0', bau
             return {'error': str(e)}
     else:
         return {'error': 'Invalid mode. Use "real-time" or "file".'}
+```
 ---
 
 ---
 
 ### **DHT11 Sensor Function**
-
+```python
 def dht_sensor_info(mode='real-time', file_path=None, port='/dev/ttyUSB0', baudrate=9600):
     """
     Function to process and return temperature and humidity sensor data.
@@ -203,6 +204,7 @@ def dht_sensor_info(mode='real-time', file_path=None, port='/dev/ttyUSB0', baudr
             return {'error': str(e)}
     else:
         return {'error': 'Invalid mode. Use "real-time" or "file".'}
+```        
 ---
 
 ---
